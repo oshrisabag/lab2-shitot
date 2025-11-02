@@ -9,6 +9,7 @@ public class ThreadCheckArray implements Runnable
 	
 	/**
 	 * variables for the class
+	 * @param sd   type of shared data
 	 */
 	private boolean flag;
 	private boolean [] winArray;
@@ -17,7 +18,7 @@ public class ThreadCheckArray implements Runnable
 	int b;
 	
 	/** constructor of the class
-	 * @synconyze between threads
+	 * syncronize between threads
 	 * initiallization of variables
 	 * recorsive
 	 */
