@@ -8,8 +8,8 @@ public class SharedData
 	private boolean flag;
 	private final int b;
 	
-	public SharedData(int[] array, int b) {
-		for (int num:array) this.array.add(num);
+	public SharedData(List<Integer> array, int b) {
+		this.array=array;
 		this.b = b;
 	}
 
