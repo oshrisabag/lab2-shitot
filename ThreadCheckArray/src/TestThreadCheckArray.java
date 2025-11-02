@@ -1,7 +1,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/** class for testing the shared data
+ * 
+ */
 public class TestThreadCheckArray {
+	/**
+	 * Execute the tests for the shared data
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		try (Scanner input = new Scanner(System.in)) {
 			Thread thread1, thread2;
