@@ -3,7 +3,7 @@ import java.util.List;
 
 public class SharedData 
 {
-	private List<Integer> array=new ArrayList<>();//check
+	private List<Integer> array=new ArrayList<>();//now its arraylist
 	private boolean [] winArray;
 	private boolean flag;
 	private final int b;
