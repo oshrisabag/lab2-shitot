@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class TestThreadCheckArray {
 	/**
-	 * Execute the tests for the shared data
+	 * Execute the tests for the shared data.
 	 * @param args
 	 */
 	public static void main(String[] args) {
