@@ -35,7 +35,7 @@ public class SharedData
 
 	/**
 	 * setter for winArray
-	 * @param winArray
+	 * @param winArray the boolean array
 	 */
 	public void setWinArray(boolean [] winArray) 
 	{
@@ -62,7 +62,7 @@ public class SharedData
 
 	/**
 	 * getter for flag
-	 * @return flag
+	 * @return flag status
 	 */
 	public boolean getFlag() 
 	{
@@ -71,7 +71,7 @@ public class SharedData
 
 	/**
 	 * setter for flag
-	 * @param flag
+	 * @param flag status
 	 */
 	public void setFlag(boolean flag) {
 		this.flag = flag;

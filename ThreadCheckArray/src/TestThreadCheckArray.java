@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class TestThreadCheckArray {
 	/**
 	 * Execute the tests for the shared data.
-	 * @param args
+	 * @param args the arguments for main
 	 */
 	public static void main(String[] args) {
 		try (Scanner input = new Scanner(System.in)) {
