@@ -20,6 +20,7 @@ public class ThreadCheckArray implements Runnable
 	/** constructor of the class
 	 * syncronize between threads
 	 * initiallization of variables
+	 * @param sd shared data
 	 * recorsive
 	 */
 	public ThreadCheckArray(SharedData sd)
