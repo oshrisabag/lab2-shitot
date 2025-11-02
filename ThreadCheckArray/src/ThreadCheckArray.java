@@ -1,14 +1,27 @@
 import java.util.List;
 
+/**	class creating threads to check numbers in the array
+ * @author oshri sabag
+ * @version notyetfound:)
+ */
 public class ThreadCheckArray implements Runnable 
 {
+	
+	/**
+	 * variables for the class
+	 */
 	private boolean flag;
 	private boolean [] winArray;
 	SharedData sd;
 	List<Integer> array;
 	int b;
 	
-	public ThreadCheckArray(SharedData sd) 
+	/** constructor of the class
+	 * @synconyze between threads
+	 * initiallization of variables
+	 * recorsive
+	 */
+	public ThreadCheckArray(SharedData sd)
 	{
 		this.sd = sd;	
 		synchronized (sd) 
@@ -19,6 +32,11 @@ public class ThreadCheckArray implements Runnable
 		winArray = new boolean[array.size()];
 	}
 	
+	/**
+	 * @param n         index in arraylist
+	 * @param b         same
+	 * @param flag      if number can be reached
+	 */
 	void rec(int n, int b)
 	{
 		synchronized (sd) 
@@ -52,6 +70,9 @@ public class ThreadCheckArray implements Runnable
 		rec(n-1, b);
 	}
 
+	/**
+	 * initial threads
+	 */
 	public void run() {
 		if (array.size() != 1)
 			if (Thread.currentThread().getName().equals("thread1"))
