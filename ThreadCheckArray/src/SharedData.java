@@ -16,8 +16,8 @@ public class SharedData
 	
 	/**
 	 * constructor method
-	 * @param array
-	 * @param b
+	 * @param array array of shared data
+	 * @param b size
 	 */
 	public SharedData(List<Integer> array, int b) {
 		this.array=array;
@@ -53,7 +53,7 @@ public class SharedData
 
 	/**
 	 * getter for b
-	 * @return b
+	 * @return b size
 	 */
 	public int getB() 
 	{
